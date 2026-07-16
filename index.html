@@ -92,8 +92,7 @@
                     <img id="login-logo-img" src="https://ui-avatars.com/api/?name=MIS&background=0f172a&color=fff" class="w-full h-full object-cover" alt="Logo Lembaga" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=MIS&background=0f172a&color=fff';">
                 </div>
                 <h1 class="text-2xl font-bold text-gray-800">HRIS Premium</h1>
-                <p class="text-gray-500 text-sm mt-1 mb-1" id="login-nama-lembaga">MIS MIFTAHUSSA'ADAH</p>
-                <p class="text-xs text-slate-400 font-medium hidden" id="login-npsn-nsm">NPSN: - | NSM: -</p>
+                <p class="text-gray-500 text-sm mt-1" id="login-nama-lembaga">MIS MIFTAHUSSA'ADAH</p>
             </div>
             
             <form id="form-login" onsubmit="event.preventDefault(); auth.login();">
@@ -113,7 +112,7 @@
             </form>
             
             <div class="mt-6 text-center text-sm text-gray-500">
-                <p id="preview-alert-text">Sistem Siap Digunakan.</p>
+                <p>Preview Mode: admin/admin123 atau guru/guru123</p>
             </div>
         </div>
     </div>
@@ -500,13 +499,13 @@
                                 <i class="fa-solid fa-school"></i> Identitas Lembaga
                             </div>
                             <div class="p-6 grid grid-cols-1 md:grid-cols-2 gap-5">
-                                <div><label class="block text-xs font-bold text-slate-500 mb-1">Nama Lembaga</label><input type="text" id="set-nama-lembaga" class="w-full p-2.5 border rounded-lg bg-gray-50 text-sm outline-none focus:border-secondary"></div>
+                                <div><label class="block text-xs font-bold text-slate-500 mb-1">Nama Lembaga</label><input type="text" id="set-nama-lembaga" value="MIS MIFTAHUSSA'ADAH" class="w-full p-2.5 border rounded-lg bg-gray-50 text-sm outline-none focus:border-secondary"></div>
                                 <div><label class="block text-xs font-bold text-slate-500 mb-1">NPSN</label><input type="text" id="set-npsn" class="w-full p-2.5 border rounded-lg bg-gray-50 text-sm outline-none focus:border-secondary"></div>
                                 <div><label class="block text-xs font-bold text-slate-500 mb-1">NSM</label><input type="text" id="set-nsm" class="w-full p-2.5 border rounded-lg bg-gray-50 text-sm outline-none focus:border-secondary"></div>
-                                <div><label class="block text-xs font-bold text-slate-500 mb-1">Telepon</label><input type="text" id="set-telepon" class="w-full p-2.5 border rounded-lg bg-gray-50 text-sm outline-none focus:border-secondary"></div>
-                                <div><label class="block text-xs font-bold text-slate-500 mb-1">Email</label><input type="email" id="set-email" class="w-full p-2.5 border rounded-lg bg-gray-50 text-sm outline-none focus:border-secondary"></div>
-                                <div><label class="block text-xs font-bold text-slate-500 mb-1">Website</label><input type="text" id="set-website" class="w-full p-2.5 border rounded-lg bg-gray-50 text-sm outline-none focus:border-secondary"></div>
-                                <div class="col-span-full"><label class="block text-xs font-bold text-slate-500 mb-1">Alamat Lengkap</label><textarea id="set-alamat" class="w-full p-2.5 border rounded-lg bg-gray-50 text-sm outline-none focus:border-secondary h-20"></textarea></div>
+                                <div><label class="block text-xs font-bold text-slate-500 mb-1">Telepon</label><input type="text" id="set-telepon" value="(021) 1234567" class="w-full p-2.5 border rounded-lg bg-gray-50 text-sm outline-none focus:border-secondary"></div>
+                                <div><label class="block text-xs font-bold text-slate-500 mb-1">Email</label><input type="email" id="set-email" value="info@mismiftahussaadah.sch.id" class="w-full p-2.5 border rounded-lg bg-gray-50 text-sm outline-none focus:border-secondary"></div>
+                                <div><label class="block text-xs font-bold text-slate-500 mb-1">Website</label><input type="text" id="set-website" value="www.mismiftahussaadah.sch.id" class="w-full p-2.5 border rounded-lg bg-gray-50 text-sm outline-none focus:border-secondary"></div>
+                                <div class="col-span-full"><label class="block text-xs font-bold text-slate-500 mb-1">Alamat Lengkap</label><textarea id="set-alamat" class="w-full p-2.5 border rounded-lg bg-gray-50 text-sm outline-none focus:border-secondary h-20">Kp. Tegalracak RT. 018/007, Desa Cariu, Kecamatan Cariu, Kabupaten Bogor</textarea></div>
                                 <div class="col-span-full"><label class="block text-xs font-bold text-slate-500 mb-1">Logo Lembaga (URL Gambar)</label><input type="text" id="set-logo" placeholder="https://domain.com/logo.png" class="w-full p-2.5 border rounded-lg bg-gray-50 text-sm outline-none focus:border-secondary"></div>
                             </div>
                         </div>
@@ -517,9 +516,9 @@
                                 <i class="fa-solid fa-user-tie"></i> Kepala Madrasah
                             </div>
                             <div class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-                                <div><label class="block text-xs font-bold text-slate-500 mb-1">Nama Kepala Madrasah</label><input type="text" id="set-kepsek-nama" class="w-full p-2.5 border rounded-lg bg-gray-50 text-sm outline-none focus:border-secondary"></div>
-                                <div><label class="block text-xs font-bold text-slate-500 mb-1">NIP</label><input type="text" id="set-kepsek-nip" class="w-full p-2.5 border rounded-lg bg-gray-50 text-sm outline-none focus:border-secondary"></div>
-                                <div><label class="block text-xs font-bold text-slate-500 mb-1">Jabatan</label><input type="text" id="set-kepsek-jabatan" class="w-full p-2.5 border rounded-lg bg-gray-50 text-sm outline-none focus:border-secondary"></div>
+                                <div><label class="block text-xs font-bold text-slate-500 mb-1">Nama Kepala Madrasah</label><input type="text" id="set-kepsek-nama" value="NAMA KEPALA MADRASAH, S.Pd.I" class="w-full p-2.5 border rounded-lg bg-gray-50 text-sm outline-none focus:border-secondary"></div>
+                                <div><label class="block text-xs font-bold text-slate-500 mb-1">NIP</label><input type="text" id="set-kepsek-nip" value="19700101 200001 1 001" class="w-full p-2.5 border rounded-lg bg-gray-50 text-sm outline-none focus:border-secondary"></div>
+                                <div><label class="block text-xs font-bold text-slate-500 mb-1">Jabatan</label><input type="text" id="set-kepsek-jabatan" value="Kepala Madrasah" class="w-full p-2.5 border rounded-lg bg-gray-50 text-sm outline-none focus:border-secondary"></div>
                                 <div class="lg:col-span-2"><label class="block text-xs font-bold text-slate-500 mb-1">Upload TTD Digital (PNG transparan)</label><input type="file" id="set-ttd" accept="image/png" class="w-full p-2 border rounded-lg bg-gray-50 text-sm outline-none"></div>
                                 <div><label class="block text-xs font-bold text-slate-500 mb-1">Upload Stempel Sekolah (PNG transparan)</label><input type="file" id="set-stempel" accept="image/png" class="w-full p-2 border rounded-lg bg-gray-50 text-sm outline-none"></div>
                             </div>
@@ -558,7 +557,7 @@
                                 </div>
                                 <div class="p-6">
                                     <select id="set-semester" class="w-full p-3 border rounded-lg bg-gray-50 text-sm outline-none focus:border-secondary font-medium">
-                                        <option value="Ganjil">Semester Ganjil</option>
+                                        <option value="Ganjil" selected>Semester Ganjil</option>
                                         <option value="Genap">Semester Genap</option>
                                     </select>
                                 </div>
@@ -571,12 +570,12 @@
                                 <i class="fa-solid fa-clock"></i> Pengaturan Absensi (Geofencing & Waktu)
                             </div>
                             <div class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-                                <div><label class="block text-xs font-bold text-slate-500 mb-1">Latitude Sekolah</label><input type="text" id="set-lat" class="w-full p-2.5 border rounded-lg bg-gray-50 text-sm outline-none focus:border-secondary"></div>
-                                <div><label class="block text-xs font-bold text-slate-500 mb-1">Longitude Sekolah</label><input type="text" id="set-lng" class="w-full p-2.5 border rounded-lg bg-gray-50 text-sm outline-none focus:border-secondary"></div>
-                                <div><label class="block text-xs font-bold text-slate-500 mb-1">Radius (Meter)</label><input type="number" id="set-radius" class="w-full p-2.5 border rounded-lg bg-gray-50 text-sm outline-none focus:border-secondary"></div>
-                                <div><label class="block text-xs font-bold text-slate-500 mb-1">Jam Masuk</label><input type="time" id="set-masuk" class="w-full p-2.5 border rounded-lg bg-gray-50 text-sm outline-none focus:border-secondary"></div>
-                                <div><label class="block text-xs font-bold text-slate-500 mb-1">Jam Pulang</label><input type="time" id="set-pulang" class="w-full p-2.5 border rounded-lg bg-gray-50 text-sm outline-none focus:border-secondary"></div>
-                                <div><label class="block text-xs font-bold text-slate-500 mb-1">Batas Terlambat</label><input type="time" id="set-terlambat" class="w-full p-2.5 border rounded-lg bg-gray-50 text-sm outline-none focus:border-secondary"></div>
+                                <div><label class="block text-xs font-bold text-slate-500 mb-1">Latitude Sekolah</label><input type="text" id="set-lat" value="-6.510493470939953" class="w-full p-2.5 border rounded-lg bg-gray-50 text-sm outline-none focus:border-secondary"></div>
+                                <div><label class="block text-xs font-bold text-slate-500 mb-1">Longitude Sekolah</label><input type="text" id="set-lng" value="107.1273352065873" class="w-full p-2.5 border rounded-lg bg-gray-50 text-sm outline-none focus:border-secondary"></div>
+                                <div><label class="block text-xs font-bold text-slate-500 mb-1">Radius (Meter)</label><input type="number" id="set-radius" value="50" class="w-full p-2.5 border rounded-lg bg-gray-50 text-sm outline-none focus:border-secondary"></div>
+                                <div><label class="block text-xs font-bold text-slate-500 mb-1">Jam Masuk</label><input type="time" id="set-masuk" value="07:00" class="w-full p-2.5 border rounded-lg bg-gray-50 text-sm outline-none focus:border-secondary"></div>
+                                <div><label class="block text-xs font-bold text-slate-500 mb-1">Jam Pulang</label><input type="time" id="set-pulang" value="14:00" class="w-full p-2.5 border rounded-lg bg-gray-50 text-sm outline-none focus:border-secondary"></div>
+                                <div><label class="block text-xs font-bold text-slate-500 mb-1">Batas Terlambat</label><input type="time" id="set-terlambat" value="07:15" class="w-full p-2.5 border rounded-lg bg-gray-50 text-sm outline-none focus:border-secondary"></div>
                             </div>
                         </div>
 
@@ -622,7 +621,10 @@
                     <p class="text-blue-100 text-sm mb-4">Waktu Indonesia Barat (WIB)</p>
                     <div class="bg-white/20 backdrop-blur rounded-xl p-4 flex items-start gap-3 border border-white/20">
                         <i class="fa-solid fa-location-dot mt-1 text-red-200"></i>
-                        <div><p class="text-xs font-semibold text-blue-50">Status Lokasi GPS:</p><p class="text-sm font-medium" id="gps-status-text">Memeriksa lokasi...</p></div>
+                        <div class="w-full">
+                            <p class="text-xs font-semibold text-blue-50">Status Lokasi GPS:</p>
+                            <p class="text-sm font-medium break-words mt-0.5" id="gps-status-text">Memeriksa lokasi...</p>
+                        </div>
                     </div>
                 </div>
 
@@ -794,52 +796,15 @@
 <!-- CORE JAVASCRIPT & LOGIC SPA -->
 <!-- ========================================== -->
 <script>
-    // PERHATIAN: 
-    // Agar data tersimpan permanen ke Spreadsheet, ubah variabel di bawah menjadi false.
-    // Jika IS_PREVIEW = true, sistem hanya akan menyimpannya ke memori browser lokal.
-    const IS_PREVIEW = false; 
-    
-    // Wajib diisi dengan URL Web App Anda sendiri
-    const GAS_URL = "https://script.google.com/macros/s/AKfycbyzH9uqy2Gz_oPbRS9AvMaT5c0va_RX5NZemvlziuFOVp1KkO9JWJcC3JlLasPllXWRXg/exec"; 
+    const IS_PREVIEW = true; // Ganti ke false saat production
+    const GAS_URL = "URL_DEPLOY_GAS_ANDA_DISINI"; 
 
-    let APP_SETTINGS = { lat: -6.5104960059231765, lng: 107.12730818651173, radius: 50 };
+    let APP_SETTINGS = { lat: -6.510493470939953, lng: 107.1273352065873, radius: 50 };
     let currentUser = null;
     let currentLocation = null;
     let cameraStream = null;
     let absenTypeTemp = "";
     let chartInstances = {};
-
-    // --- MOCK DATABASE (HANYA AKTIF JIKA IS_PREVIEW = TRUE) ---
-    let mockDB = JSON.parse(localStorage.getItem('absensi_mock_db'));
-    if(!mockDB) {
-        mockDB = {
-            settings: {
-                logo: "https://ui-avatars.com/api/?name=MIS&background=0f172a&color=fff",
-                nama_lembaga: "MIS MIFTAHUSSA'ADAH",
-                npsn: "12345678",
-                nsm: "111222333",
-                telepon: "(021) 1234567",
-                email: "info@mismiftahussaadah.sch.id",
-                website: "www.mismiftahussaadah.sch.id",
-                alamat: "Kp. Tegalracak RT. 018/007, Desa Cariu, Kecamatan Cariu, Kabupaten Bogor",
-                kepsek_nama: "NAMA KEPALA MADRASAH, S.Pd.I",
-                kepsek_nip: "19700101 200001 1 001",
-                kepsek_jabatan: "Kepala Madrasah",
-                semester_aktif: "Ganjil",
-                lat: -6.510493470939953,
-                lng: 107.1273352065873,
-                radius: 50,
-                jam_masuk: "07:00",
-                jam_pulang: "14:00",
-                batas_terlambat: "07:15"
-            },
-            gurus: [
-                {id_guru:'GRU-1', nip:'19800101', nama:'Budi Santoso, S.Pd', mapel:'Guru Kelas', jabatan:'Wali Kelas', tempat_lahir:'Bogor', tgl_lahir:'1980-01-01', jenis_kelamin:'L', alamat:'Cariu', no_hp:'0812345678', email:'budi@mis.edu', pendidikan:'S1 PAI', tgl_masuk:'2015-07-01', status_pegawai:'GTY', username:'guru', password:'guru123', status_akun:'AKTIF'},
-                {id_guru:'GRU-2', nip:'19850202', nama:'Siti Aminah, S.Ag', mapel:'PAI', jabatan:'Guru Bidang', tempat_lahir:'Jakarta', tgl_lahir:'1985-02-02', jenis_kelamin:'P', alamat:'Jonggol', no_hp:'0823456789', email:'siti@mis.edu', pendidikan:'S1 PAI', tgl_masuk:'2018-07-01', status_pegawai:'GTY', username:'siti', password:'siti123', status_akun:'AKTIF'}
-            ]
-        };
-        localStorage.setItem('absensi_mock_db', JSON.stringify(mockDB));
-    }
 
     const api = {
         call: async (action, data = {}) => {
@@ -848,10 +813,6 @@
                 if (IS_PREVIEW) return await mockAPI.handle(action, data);
                 const response = await fetch(GAS_URL, {
                     method: 'POST',
-                    headers: {
-                        'Content-Type': 'text/plain;charset=utf-8',
-                    },
-                    redirect: 'follow', // Memastikan keamanan CORS & pengalihan dari server Apps Script
                     body: JSON.stringify({ action: action, data: data })
                 });
                 const result = await response.json();
@@ -859,18 +820,9 @@
                 return result;
             } catch (error) {
                 ui.hideLoading();
-                
-                // Jika koneksi server mati atau CORS gagal, jangan crash - alihkan otomatis
-                Swal.fire({
-                    icon: 'warning',
-                    title: 'Koneksi Server Gagal',
-                    text: 'Akses ke Google Sheets terputus atau URL GAS tidak valid. Mengalihkan ke Mode Preview Offline.',
-                    toast: true,
-                    position: 'top-end',
-                    showConfirmButton: false,
-                    timer: 6000
-                });
-                return await mockAPI.handle(action, data);
+                console.error("API Error:", error);
+                Swal.fire('Koneksi Gagal', 'Pastikan internet Anda stabil atau cek URL GAS.', 'error');
+                return { success: false };
             }
         }
     };
@@ -878,25 +830,24 @@
     const mockAPI = {
         handle: async (action, data) => {
             return new Promise((resolve) => {
-                setTimeout(() => { 
+                setTimeout(() => { // Simulate network delay
                     ui.hideLoading();
-                    
                     if(action === 'getPublicSettings') {
-                        resolve({success:true, data: mockDB.settings });
+                        resolve({success:true, data:{
+                            nama_lembaga: "MIS MIFTAHUSSA'ADAH",
+                            logo: "https://ui-avatars.com/api/?name=MIS&background=0f172a&color=fff"
+                        }});
                     }
                     else if(action === 'login') {
                         if(data.username === 'admin' && data.password === 'admin123') resolve({success:true, data:{id_guru:'ADM-1', nama:'Administrator', role:'ADMIN'}});
-                        else {
-                            const guruLogin = mockDB.gurus.find(g => g.username === data.username && g.password === data.password && g.status_akun === 'AKTIF');
-                            if(guruLogin) resolve({success:true, data:{...guruLogin, role:'GURU'}});
-                            else resolve({success:false, message:'Username/Password salah atau akun tidak aktif!'});
-                        }
+                        else if(data.username === 'guru' && data.password === 'guru123') resolve({success:true, data:{id_guru:'GRU-1', nama:'Budi Santoso, S.Pd', role:'GURU', nip:'19800101', mapel:'Guru Kelas', jabatan:'Wali Kelas', tempat_lahir:'Bogor', tgl_lahir:'1980-01-01', jenis_kelamin:'L', alamat:'Cariu, Bogor', no_hp:'08123456', email:'budi@mis.edu', status_pegawai:'GTY', pendidikan:'S1 PAI', tgl_masuk:'2015-07-01'}});
+                        else resolve({success:false, message:'Username/Password salah!'});
                     }
                     else if(action === 'absenMasuk' || action === 'absenPulang') { resolve({success:true, message:'Presensi & Selfie berhasil direkam!'}); }
                     else if(action === 'ajukanIzin') { resolve({success:true, message:'Pengajuan izin beserta bukti berhasil dikirim!'}); }
                     else if(action === 'getDashboardAdmin') {
                         resolve({success:true, data:{
-                            hari_ini: { total_guru: mockDB.gurus.length, hadir: 20, belum_hadir: 3, izin: 1, sakit: 1, dinas_luar: 0, cuti: 0, alpha: 0, terlambat: 2 },
+                            hari_ini: { total_guru: 25, hadir: 20, belum_hadir: 3, izin: 1, sakit: 1, dinas_luar: 0, cuti: 0, alpha: 0, terlambat: 2 },
                             kemarin: { hadir: 22, izin: 2, alpha: 1, terlambat: 1, persentase: 88 },
                             bulan_ini: { hadir: 450, izin: 12, sakit: 5, alpha: 2, terlambat: 15, persentase: 94 },
                             bulan_lalu: { hadir: 430, persentase: 90, trend: "Naik" },
@@ -906,12 +857,16 @@
                             ],
                             rekap_guru: [
                                 {nama: "Budi Santoso, S.Pd", hadir: 20, izin: 1, alpha: 0, persentase: 95},
-                                {nama: "Siti Aminah, S.Ag", hadir: 18, izin: 2, alpha: 1, persentase: 85}
+                                {nama: "Siti Aminah, S.Ag", hadir: 18, izin: 2, alpha: 1, persentase: 85},
+                                {nama: "Ahmad Dahlan, M.Pd", hadir: 21, izin: 0, alpha: 0, persentase: 100}
                             ]
                         }});
                     }
                     else if(action === 'getDataGuru') {
-                        resolve({success:true, data: mockDB.gurus });
+                        resolve({success:true, data:[
+                            {id_guru:'GRU-1', nip:'19800101', nama:'Budi Santoso, S.Pd', mapel:'Guru Kelas', jabatan:'Wali Kelas', no_hp:'0812345678', username:'guru', password:'guru123', status_akun:'AKTIF'},
+                            {id_guru:'GRU-2', nip:'19850202', nama:'Siti Aminah, S.Ag', mapel:'PAI', jabatan:'Guru Bidang', no_hp:'0823456789', username:'siti', password:'siti123', status_akun:'AKTIF'}
+                        ]});
                     }
                     else if(action === 'getIzinPending') {
                         resolve({success:true, data:[
@@ -934,7 +889,7 @@
                     }
                     else if(action === 'getAnalitik') {
                         resolve({success:true, data:{
-                            pie: [85, 5, 8, 2],
+                            pie: [85, 5, 8, 2], // Hadir, Izin, Sakit, Alpha
                             bar: { labels: ['Ahmad', 'Budi', 'Siti', 'Joko'], data: [100, 95, 75, 88] },
                             line: { labels: ['Jan','Feb','Mar','Apr','Mei','Jun'], data: [90, 92, 88, 95, 96, 94] }
                         }});
@@ -949,33 +904,13 @@
                             resolve({success:true, stat:{hadir:20, izin:1, alpha:0, telat:2}, data:[{tanggal: 'Kamis, 06:45 WIB', tipe:'Hadir (Masuk)', status:'Tepat Waktu'}, {tanggal: 'Senin, 07:20 WIB', tipe:'Hadir (Masuk)', status:'Terlambat'}]});
                         }
                     }
-                    else if(action === 'saveGuru') {
-                        if(data.id_guru) { // Edit
-                            const idx = mockDB.gurus.findIndex(g => g.id_guru === data.id_guru);
-                            if(idx !== -1) mockDB.gurus[idx] = { ...mockDB.gurus[idx], ...data };
-                        } else { // Tambah
-                            mockDB.gurus.push({ ...data, id_guru: 'GRU-' + Date.now() });
-                        }
-                        localStorage.setItem('absensi_mock_db', JSON.stringify(mockDB));
-                        resolve({success:true, message:'Data guru berhasil disimpan.'}); 
-                    }
-                    else if(action === 'deleteGuru') {
-                        mockDB.gurus = mockDB.gurus.filter(g => g.id_guru !== data.id_guru);
-                        localStorage.setItem('absensi_mock_db', JSON.stringify(mockDB));
-                        resolve({success:true, message:'Data guru berhasil dihapus.'});
-                    }
                     else if(action === 'importGuruMassal') {
-                        const newGurus = data.gurus.map((g, index) => ({ ...g, id_guru: 'GRU-' + Date.now() + index }));
-                        mockDB.gurus = [...mockDB.gurus, ...newGurus];
-                        localStorage.setItem('absensi_mock_db', JSON.stringify(mockDB));
                         resolve({success:true, message:`Berhasil mengimpor ${data.gurus.length} data guru ke database.`});
                     }
                     else if(action === 'saveSettingsAll') {
-                        mockDB.settings = { ...mockDB.settings, ...data };
-                        localStorage.setItem('absensi_mock_db', JSON.stringify(mockDB));
-                        resolve({success:true, message:'Semua pengaturan berhasil disimpan permanen.'});
+                        resolve({success:true, message:'Semua pengaturan berhasil disimpan ke database.'});
                     }
-                    else if(action === 'actionIzin') { resolve({success:true, message:'Tindakan berhasil disimpan.'}); }
+                    else if(action === 'actionIzin' || action === 'saveGuru') { resolve({success:true, message:'Tindakan berhasil disimpan.'}); }
                 }, 800);
             });
         }
@@ -995,27 +930,17 @@
 
     const auth = {
         init: () => {
-            if(IS_PREVIEW) {
-                document.getElementById('preview-alert-text').innerHTML = "<span class='text-amber-500 font-bold'><i class='fa-solid fa-triangle-exclamation'></i> MODE PREVIEW AKTIF (Tidak tersambung ke Sheet).</span>";
-            }
-
+            // Load Public Settings for Logo and Form Setup
             api.call('getPublicSettings').then(res => {
                 if(res.success) {
-                    const d = res.data;
-                    if(d.logo) document.getElementById('login-logo-img').src = d.logo;
-                    if(d.nama_lembaga) document.getElementById('login-nama-lembaga').innerText = d.nama_lembaga;
-                    
-                    if(d.npsn || d.nsm) {
-                        const npsnNsmEl = document.getElementById('login-npsn-nsm');
-                        if(npsnNsmEl) {
-                            npsnNsmEl.innerText = `NPSN: ${d.npsn || '-'} | NSM: ${d.nsm || '-'}`;
-                            npsnNsmEl.classList.remove('hidden');
-                        }
+                    if(res.data.logo) {
+                        document.getElementById('login-logo-img').src = res.data.logo;
+                        if(document.getElementById('set-logo')) document.getElementById('set-logo').value = res.data.logo;
                     }
-
-                    if(d.lat) APP_SETTINGS.lat = parseFloat(d.lat);
-                    if(d.lng) APP_SETTINGS.lng = parseFloat(d.lng);
-                    if(d.radius) APP_SETTINGS.radius = parseInt(d.radius);
+                    if(res.data.nama_lembaga) {
+                        document.getElementById('login-nama-lembaga').innerText = res.data.nama_lembaga;
+                        if(document.getElementById('set-nama-lembaga')) document.getElementById('set-nama-lembaga').value = res.data.nama_lembaga;
+                    }
                 }
             });
 
@@ -1024,12 +949,6 @@
                 currentUser = JSON.parse(saved);
                 ui.routeBasedOnRole();
             } else { ui.showView('login'); }
-            
-            const d = new Date();
-            const months = ["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];
-            if(document.getElementById('print-date')) {
-                document.getElementById('print-date').innerText = `${d.getDate()} ${months[d.getMonth()]} ${d.getFullYear()}`;
-            }
         },
         login: async () => {
             const u = document.getElementById('login-username').value;
@@ -1053,6 +972,8 @@
                     localStorage.removeItem('absen_session');
                     currentUser = null;
                     if(cameraStream) ui.closeCamera();
+                    // BERSIHKAN PELACAKAN GPS SAAT LOGOUT
+                    if(guru.watchId !== null) navigator.geolocation.clearWatch(guru.watchId);
                     ui.showView('login');
                 }
             })
@@ -1100,7 +1021,6 @@
             if(tabName === 'rekap') admin.loadRekap();
             if(tabName === 'analitik') admin.loadAnalitik();
             if(tabName === 'laporan') admin.loadLaporan();
-            if(tabName === 'pengaturan') admin.loadPengaturan();
 
             document.getElementById('main-scroll-area').scrollTop = 0;
         },
@@ -1129,6 +1049,8 @@
 
     const guru = {
         tempBase64Image: null,
+        watchId: null, // Variable baru untuk pelacakan GPS berjalan
+        
         initDashboard: () => {
             guru.startClock();
             guru.getLocationTracker();
@@ -1191,25 +1113,41 @@
 
         getLocationTracker: () => {
             const statusEl = document.getElementById('gps-status-text');
-            if (!navigator.geolocation) { statusEl.innerText = "GPS tidak didukung."; return; }
+            if (!navigator.geolocation) { statusEl.innerText = "GPS tidak didukung oleh browser ini."; return; }
             
-            const geoOptions = { enableHighAccuracy: true, timeout: 10000, maximumAge: 0 };
+            statusEl.innerHTML = `<span class="text-slate-500 animate-pulse"><i class="fa-solid fa-satellite-dish"></i> Mencari sinyal GPS...</span>`;
 
-            navigator.geolocation.getCurrentPosition(
+            // PERBAIKAN: Menggunakan timeout lebih lama & watchPosition
+            const geoOptions = { enableHighAccuracy: true, timeout: 20000, maximumAge: 0 };
+
+            // Bersihkan watch lama jika ada
+            if(guru.watchId !== null) navigator.geolocation.clearWatch(guru.watchId);
+
+            guru.watchId = navigator.geolocation.watchPosition(
                 (pos) => {
                     currentLocation = pos.coords;
                     const dist = geo.getDistance(currentLocation.latitude, currentLocation.longitude, APP_SETTINGS.lat, APP_SETTINGS.lng);
                     const akurasi = Math.round(pos.coords.accuracy);
-                    if(dist <= APP_SETTINGS.radius) statusEl.innerHTML = `<span class="text-emerald-600"><i class="fa-solid fa-circle-check"></i> Dalam area sekolah (${Math.round(dist)}m)</span>`;
-                    else statusEl.innerHTML = `<span class="text-red-500"><i class="fa-solid fa-circle-xmark"></i> Diluar area sekolah (${Math.round(dist)}m)</span>`;
+                    
+                    if(dist <= APP_SETTINGS.radius) {
+                        statusEl.innerHTML = `<span class="text-emerald-600"><i class="fa-solid fa-circle-check"></i> Dalam area sekolah (${Math.round(dist)}m)</span>`;
+                    } else {
+                        statusEl.innerHTML = `<span class="text-red-500"><i class="fa-solid fa-circle-xmark"></i> Diluar area sekolah (${Math.round(dist)}m)</span>`;
+                    }
                     document.getElementById('wm-loc').innerHTML = `<i class="fa-solid fa-location-dot"></i> Lat: ${currentLocation.latitude.toFixed(5)} Lng: ${currentLocation.longitude.toFixed(5)}<br>Akurasi GPS: ±${akurasi}m`;
                 },
                 (err) => { 
                     let errMsg = "Akses GPS gagal.";
-                    if(err.code === 1) errMsg = "Akses lokasi ditolak pengguna.";
+                    if(err.code === 1) {
+                        errMsg = "Akses lokasi ditolak pengguna.";
+                        statusEl.innerHTML = `<span class="text-rose-500"><i class="fa-solid fa-hand"></i> ${errMsg}</span>`;
+                        return; // Jangan ulangi animasi jika memang ditolak
+                    }
                     if(err.code === 2) errMsg = "Sinyal satelit tidak tersedia.";
-                    if(err.code === 3) errMsg = "Waktu pencarian GPS habis (Timeout).";
-                    statusEl.innerHTML = `<span class="text-rose-500"><i class="fa-solid fa-triangle-exclamation"></i> ${errMsg}</span>`;
+                    if(err.code === 3) errMsg = "Sinyal GPS lemah / Timeout.";
+                    
+                    // Karena memakai watchPosition, sistem akan terus mencoba ulang otomatis
+                    statusEl.innerHTML = `<span class="text-amber-500 animate-pulse"><i class="fa-solid fa-triangle-exclamation"></i> ${errMsg} Sedang mencoba kembali...</span>`;
                 },
                 geoOptions
             );
@@ -1398,9 +1336,9 @@
                         tableHtml += `
                             <tr class="border-b border-slate-50 hover:bg-slate-50 transition">
                                 <td class="p-3"><p class="font-bold text-slate-700 text-sm">${guru.nama}</p></td>
-                                <td class="p-3 text-sm text-slate-600 text-center">${guru.hadir}</td>
-                                <td class="p-3 text-sm text-slate-600 text-center">${guru.izin}</td>
-                                <td class="p-3 text-sm text-slate-600 text-center">${guru.alpha}</td>
+                                <td class="p-3 text-sm text-slate-600">${guru.hadir}</td>
+                                <td class="p-3 text-sm text-slate-600">${guru.izin}</td>
+                                <td class="p-3 text-sm text-slate-600">${guru.alpha}</td>
                                 <td class="p-3 text-center"><span class="px-2 py-1 rounded-md text-xs font-bold ${pctColor}">${guru.persentase}%</span></td>
                             </tr>
                         `;
@@ -1551,7 +1489,7 @@
 
         printLaporan: () => {
             const namaLembaga = document.getElementById('set-nama-lembaga').value || "MIS MIFTAHUSSA'ADAH";
-            const logoSrc = document.getElementById('login-logo-img').src;
+            const logoSrc = document.getElementById('login-logo-img').src; // Sudah dinamis mengambil img src terupdate
             const kepsek = document.getElementById('set-kepsek-nama').value || "(__________________)";
             const nip = document.getElementById('set-kepsek-nip').value || "";
             const periode = document.getElementById('filter-laporan').value;
@@ -1657,7 +1595,6 @@
                 let html = "";
                 res.data.forEach(g => {
                     let stColor = g.status_akun === 'AKTIF' ? 'bg-emerald-100 text-emerald-700' : 'bg-rose-100 text-rose-700';
-                    let gStr = encodeURIComponent(JSON.stringify(g));
                     html += `
                         <tr class="hover:bg-slate-50 transition border-b border-slate-50">
                             <td class="p-3"><img src="https://ui-avatars.com/api/?name=${g.nama.charAt(0)}&background=random" class="w-10 h-10 rounded-full"></td>
@@ -1667,8 +1604,8 @@
                             <td class="p-3 text-sm text-slate-600"><i class="fa-solid fa-phone text-xs"></i> ${g.no_hp || '-'}</td>
                             <td class="p-3 text-center"><span class="px-2 py-1 rounded-md text-[10px] font-bold ${stColor}">${g.status_akun}</span></td>
                             <td class="p-3 text-center">
-                                <button onclick="admin.editGuru('${gStr}')" class="w-8 h-8 rounded-full bg-blue-50 text-blue-500 hover:bg-blue-500 hover:text-white transition"><i class="fa-solid fa-pen"></i></button>
-                                <button onclick="admin.deleteGuru('${g.id_guru}')" class="w-8 h-8 rounded-full bg-red-50 text-red-500 hover:bg-red-500 hover:text-white transition"><i class="fa-solid fa-trash"></i></button>
+                                <button class="w-8 h-8 rounded-full bg-blue-50 text-blue-500 hover:bg-blue-500 hover:text-white transition"><i class="fa-solid fa-pen"></i></button>
+                                <button class="w-8 h-8 rounded-full bg-red-50 text-red-500 hover:bg-red-500 hover:text-white transition"><i class="fa-solid fa-trash"></i></button>
                             </td>
                         </tr>
                     `;
@@ -1679,34 +1616,6 @@
 
         openModalGuru: () => {
             document.getElementById('form-guru').reset();
-            document.getElementById('form-guru').removeAttribute('data-id'); 
-            document.getElementById('modal-guru-title').innerText = 'Tambah Data Guru';
-            document.getElementById('modal-guru').classList.remove('hidden');
-        },
-
-        editGuru: (gStr) => {
-            const g = JSON.parse(decodeURIComponent(gStr));
-            document.getElementById('form-guru').reset();
-            
-            document.getElementById('g-nip').value = g.nip || '';
-            document.getElementById('g-nama').value = g.nama || '';
-            document.getElementById('g-jk').value = g.jenis_kelamin || 'L';
-            document.getElementById('g-tempat').value = g.tempat_lahir || '';
-            document.getElementById('g-tgllahir').value = g.tgl_lahir || '';
-            document.getElementById('g-hp').value = g.no_hp || '';
-            document.getElementById('g-email').value = g.email || '';
-            document.getElementById('g-alamat').value = g.alamat || '';
-            document.getElementById('g-jabatan').value = g.jabatan || '';
-            document.getElementById('g-mapel').value = g.mapel || '';
-            document.getElementById('g-statuspeg').value = g.status_pegawai || 'GTY';
-            document.getElementById('g-pend').value = g.pendidikan || '';
-            document.getElementById('g-tglmasuk').value = g.tgl_masuk || '';
-            document.getElementById('g-user').value = g.username || '';
-            document.getElementById('g-pass').value = g.password || '';
-            document.getElementById('g-statusakun').value = g.status_akun || 'AKTIF';
-            
-            document.getElementById('modal-guru-title').innerText = 'Edit Data Guru';
-            document.getElementById('form-guru').setAttribute('data-id', g.id_guru); 
             document.getElementById('modal-guru').classList.remove('hidden');
         },
 
@@ -1716,10 +1625,7 @@
             const pass = document.getElementById('g-pass').value;
             if(!nama || !user || !pass) return Swal.fire('Error', 'Nama Lengkap, Username, dan Password wajib diisi.', 'error');
             
-            const id_guru_edit = document.getElementById('form-guru').getAttribute('data-id'); 
-
             const payload = {
-                id_guru: id_guru_edit,
                 nip: document.getElementById('g-nip').value, nama: nama,
                 jenis_kelamin: document.getElementById('g-jk').value, tempat_lahir: document.getElementById('g-tempat').value,
                 tgl_lahir: document.getElementById('g-tgllahir').value, no_hp: document.getElementById('g-hp').value,
@@ -1732,34 +1638,11 @@
 
             document.getElementById('modal-guru').classList.add('hidden');
             const res = await api.call('saveGuru', payload);
-            if(res.success) { 
-                Swal.fire('Berhasil', 'Data guru disimpan', 'success'); 
-                admin.loadDataGuru(); 
-            } else Swal.fire('Gagal', res.message, 'error');
+            if(res.success) { Swal.fire('Berhasil', 'Data guru disimpan', 'success'); admin.loadDataGuru(); } 
+            else Swal.fire('Gagal', res.message, 'error');
         },
 
-        deleteGuru: (id_guru) => {
-            Swal.fire({
-                title: 'Hapus Data Guru?',
-                text: "Data yang dihapus tidak dapat dikembalikan!",
-                icon: 'warning',
-                showCancelButton: true,
-                confirmButtonColor: '#ef4444',
-                cancelButtonColor: '#3b82f6',
-                confirmButtonText: 'Ya, Hapus!'
-            }).then(async (result) => {
-                if (result.isConfirmed) {
-                    const res = await api.call('deleteGuru', { id_guru: id_guru });
-                    if(res.success) {
-                        Swal.fire('Terhapus!', res.message, 'success');
-                        admin.loadDataGuru();
-                    } else {
-                        Swal.fire('Gagal', res.message, 'error');
-                    }
-                }
-            })
-        },
-
+        // --- IMPORT GURU MASAL ---
         openModalImport: () => {
             document.getElementById('file-import-guru').value = "";
             document.getElementById('modal-import-guru').classList.remove('hidden');
@@ -1790,39 +1673,17 @@
                     
                     if(jsonData.length === 0) return Swal.fire('Error', 'File yang diupload kosong atau format tidak sesuai.', 'error');
                     
-                    // Mapping Excel Indonesia -> DB
-                    const mappedData = jsonData.map(row => ({
-                        nip: row["NIP"] || "",
-                        nama: row["Nama Lengkap"] || "",
-                        jenis_kelamin: row["Jenis Kelamin (L/P)"] || "L",
-                        tempat_lahir: row["Tempat Lahir"] || "",
-                        tgl_lahir: row["Tanggal Lahir (YYYY-MM-DD)"] || "",
-                        no_hp: row["No HP"] || "",
-                        email: row["Email"] || "",
-                        alamat: row["Alamat"] || "",
-                        jabatan: row["Jabatan"] || "",
-                        mapel: row["Mata Pelajaran"] || "",
-                        status_pegawai: row["Status Kepegawaian"] || "GTY",
-                        pendidikan: row["Pendidikan"] || "",
-                        tgl_masuk: row["Tanggal Masuk (YYYY-MM-DD)"] || "",
-                        username: row["Username"] || "",
-                        password: row["Password"] || "",
-                        status_akun: "AKTIF"
-                    })).filter(g => g.nama !== "" && g.username !== ""); 
-                    
-                    if(mappedData.length === 0) return Swal.fire('Error', 'Tidak ada baris data valid. Pastikan kolom "Nama Lengkap" dan "Username" terisi.', 'error');
-
                     document.getElementById('modal-import-guru').classList.add('hidden');
                     
-                    const res = await api.call('importGuruMassal', { gurus: mappedData });
+                    const res = await api.call('importGuruMassal', { gurus: jsonData });
                     if(res.success) {
                         Swal.fire('Berhasil', res.message, 'success');
-                        admin.loadDataGuru(); 
+                        admin.loadDataGuru(); // Refresh tabel data guru
                     } else {
                         Swal.fire('Gagal Import', res.message, 'error');
                     }
                 } catch(err) {
-                    Swal.fire('Error Membaca File', 'Terjadi kesalahan saat memproses file Excel. Pastikan file tidak rusak.', 'error');
+                    Swal.fire('Error Membaca File', 'Terjadi kesalahan saat memparsing file Excel. Pastikan file tidak corrupt.', 'error');
                 }
             };
             reader.readAsArrayBuffer(file);
@@ -1888,35 +1749,9 @@
             Swal.fire({toast: true, position: 'top-end', icon: 'success', title: 'Tahun ajaran ditambahkan', showConfirmButton: false, timer: 1500});
         },
 
-        // --- LOAD PENGATURAN FORM ---
-        loadPengaturan: async () => {
-            const res = await api.call('getPublicSettings');
-            if(res.success) {
-                const d = res.data;
-                if(document.getElementById('set-logo')) document.getElementById('set-logo').value = d.logo || '';
-                if(document.getElementById('set-nama-lembaga')) document.getElementById('set-nama-lembaga').value = d.nama_lembaga || '';
-                if(document.getElementById('set-npsn')) document.getElementById('set-npsn').value = d.npsn || '';
-                if(document.getElementById('set-nsm')) document.getElementById('set-nsm').value = d.nsm || '';
-                if(document.getElementById('set-telepon')) document.getElementById('set-telepon').value = d.telepon || '';
-                if(document.getElementById('set-email')) document.getElementById('set-email').value = d.email || '';
-                if(document.getElementById('set-website')) document.getElementById('set-website').value = d.website || '';
-                if(document.getElementById('set-alamat')) document.getElementById('set-alamat').value = d.alamat || '';
-                if(document.getElementById('set-kepsek-nama')) document.getElementById('set-kepsek-nama').value = d.kepsek_nama || '';
-                if(document.getElementById('set-kepsek-nip')) document.getElementById('set-kepsek-nip').value = d.kepsek_nip || '';
-                if(document.getElementById('set-kepsek-jabatan')) document.getElementById('set-kepsek-jabatan').value = d.kepsek_jabatan || '';
-                if(document.getElementById('set-semester')) document.getElementById('set-semester').value = d.semester_aktif || '';
-                if(document.getElementById('set-lat')) document.getElementById('set-lat').value = d.lat || '';
-                if(document.getElementById('set-lng')) document.getElementById('set-lng').value = d.lng || '';
-                if(document.getElementById('set-radius')) document.getElementById('set-radius').value = d.radius || '';
-                if(document.getElementById('set-masuk')) document.getElementById('set-masuk').value = d.jam_masuk || '';
-                if(document.getElementById('set-pulang')) document.getElementById('set-pulang').value = d.jam_pulang || '';
-                if(document.getElementById('set-terlambat')) document.getElementById('set-terlambat').value = d.batas_terlambat || '';
-            }
-        },
-
         saveAllSettings: async () => {
             const payload = {
-                logo: document.getElementById('set-logo').value, 
+                logo: document.getElementById('set-logo').value, // Ditambahkan binding untuk Logo
                 nama_lembaga: document.getElementById('set-nama-lembaga').value,
                 npsn: document.getElementById('set-npsn').value,
                 nsm: document.getElementById('set-nsm').value,
@@ -1942,16 +1777,9 @@
                 APP_SETTINGS.lng = parseFloat(payload.lng);
                 APP_SETTINGS.radius = parseInt(payload.radius);
                 
-                // Pembaruan Live di Login Screen 
+                // Live update logo and nama lembaga in UI immediately after save
                 if(payload.logo) document.getElementById('login-logo-img').src = payload.logo;
                 if(payload.nama_lembaga) document.getElementById('login-nama-lembaga').innerText = payload.nama_lembaga;
-                
-                // Pembaruan NPSN NSM Live
-                const npsnNsmEl = document.getElementById('login-npsn-nsm');
-                if(npsnNsmEl && (payload.npsn || payload.nsm)) {
-                    npsnNsmEl.innerText = `NPSN: ${payload.npsn || '-'} | NSM: ${payload.nsm || '-'}`;
-                    npsnNsmEl.classList.remove('hidden');
-                }
                 
                 Swal.fire('Berhasil', 'Seluruh pengaturan sistem berhasil disimpan.', 'success');
             } else {
